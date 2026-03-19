@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//Users/karithomas/kari_code/**)",
+      "Bash(npm create:*)",
+      "Bash(cp -r /Users/karithomas/kari_code/rsthomashauling-temp/* /Users/karithomas/kari_code/animated-waffle/)",
+      "Bash(cp /Users/karithomas/kari_code/rsthomashauling-temp/.gitignore /Users/karithomas/kari_code/animated-waffle/)",
+      "Bash(rm -rf /Users/karithomas/kari_code/rsthomashauling-temp)",
+      "Bash(npm install:*)",
+      "Bash(npm run:*)"
+    ]
+  }
+}
