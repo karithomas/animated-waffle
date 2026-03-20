@@ -162,15 +162,21 @@ async function handleSubmit() {
 
   &__container {
     @include container;
+
+    @include respond-to(md) {
+      padding-left: 6rem;
+      padding-right: 6rem;
+    }
   }
 
   &__grid {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 3rem;
+    gap: 2rem;
 
     @include respond-to(md) {
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1.2fr;
+      gap: 2.5rem;
     }
   }
 
@@ -184,7 +190,7 @@ async function handleSubmit() {
   &__details {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 1rem;
   }
 
   &__detail {

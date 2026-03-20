@@ -6,6 +6,22 @@
       </div>
     </section>
 
+    <section class="intro">
+      <div class="intro__container">
+        <p>
+          R.S. Thomas Hauling, Inc. has been providing commercial hauling services across Virginia
+          for over 40 years. With a fleet of more than 30 dump trucks and dump trailers, we have the
+          capacity to haul virtually any type of aggregate you need — from bulk tonnage jobs like landfill
+          cell construction and road work to large-scale site development projects.
+        </p>
+        <p>
+          Our fleet also includes 6 aluminum trailers for stockpiling and 11 Hardox steel trailers
+          built for hauling all sizes of rip rap, including armor stone up to 6-ton rock. All of our
+          trailers are equipped with hydraulic high-lift tailgates for safe, efficient dumping of large rock.
+        </p>
+      </div>
+    </section>
+
     <section class="materials">
       <div class="materials__container">
         <h2 class="section-heading">What We Haul</h2>
@@ -76,6 +92,27 @@ const materials = [
 <style lang="scss" scoped>
 @use '../assets/scss/variables' as *;
 @use '../assets/scss/mixins' as *;
+
+.intro {
+  @include section-padding;
+  padding-bottom: 0;
+
+  &__container {
+    @include container;
+    max-width: 800px;
+
+    p {
+      color: $dark-gray;
+      font-size: 1.05rem;
+      line-height: 1.8;
+      margin-bottom: 1.5rem;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
 
 .hero {
   min-height: 40vh;

@@ -253,7 +253,7 @@
 
 .cta-banner {
   @include section-padding;
-  background-color: $primary-blue;
+  background-color: #2A5080;
   text-align: center;
   color: $white;
 

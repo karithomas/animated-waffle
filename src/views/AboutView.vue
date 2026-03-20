@@ -11,13 +11,26 @@
         <h2 class="section-heading">Our Story</h2>
         <p>
           In 1985, Randy Thomas started R.S. Thomas Hauling, Inc. with a single truck and a simple promise:
-          deliver quality work, on time, every time. What began as a one-man operation in Powhatan, Virginia
-          has grown into one of Central Virginia's most respected hauling companies.
+          deliver quality work, on time, every time. Over 40 years later, Randy still owns and operates
+          the company, and that promise still holds. What began as a one-man operation in Powhatan, Virginia
+          has grown into one of the most trusted aggregate hauling contractors in the state.
         </p>
         <p>
-          Today, with a fleet of over 30 dump trucks and a team of experienced CDL drivers,
-          we serve contractors, municipalities, and businesses across Virginia and surrounding states.
-          We're still family-owned, and that original commitment to quality hasn't changed.
+          Now armed with over 30 dump trucks and tractor-trailers and a team of 30+ CDL-licensed drivers,
+          we carry all the equipment, vehicles, and staff to haul whatever aggregate you need moved. We
+          specialize in stone, rip rap, shot rock, dirt, sand, and gravel — but if there's another aggregate
+          you need, give us a call and we can likely accommodate your needs. Our customers include site
+          contractors, quarries, and environmental and shoreline restoration contractors across Virginia
+          and the surrounding states.
+        </p>
+        <p>
+          In addition to hauling, we operate a full-service repair and maintenance shop geared toward
+          heavy truck repair, staffed by experienced, trained technicians who can tackle virtually any problem.
+        </p>
+        <p>
+          We also believe in protecting the environment and go above and beyond in preserving our natural
+          resources — as evidenced by the Clean Business Award of Powhatan, which we're proud to have earned.
+          Browse our site to see how we can best serve you.
         </p>
       </div>
     </section>

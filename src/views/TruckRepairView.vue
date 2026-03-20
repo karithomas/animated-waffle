@@ -6,25 +6,31 @@
       </div>
     </section>
 
-    <section class="services">
-      <div class="services__container">
-        <h2 class="section-heading">What We Service</h2>
-        <div class="services__grid">
-          <div class="services__card" v-for="service in services" :key="service.title">
-            <h3>{{ service.title }}</h3>
-            <p>{{ service.description }}</p>
-          </div>
-        </div>
+    <section class="intro">
+      <div class="intro__container">
+        <p>
+          Located in Powhatan, Virginia, R.S. Thomas Hauling, Inc. operates a full-service heavy truck
+          repair facility capable of servicing most heavy trucks and trailers. From dump trucks
+          to 18-wheel tractor-trailers, our team handles it all. With the latest diagnostic technology
+          and ongoing training, we're able to identify and repair virtually any issue.
+        </p>
+        <p>
+          We can also fabricate most types of hydraulic hoses. If your truck or trailer needs service,
+          don't hesitate to call one of the most experienced and professional repair shops in Virginia —
+          we'll get you back up and running.
+        </p>
       </div>
     </section>
 
-    <section class="facility">
-      <div class="facility__container">
-        <h2 class="section-heading">Our Facility</h2>
-        <p>
-          Our full-service repair shop is equipped to handle everything from routine maintenance to major overhauls.
-          Our experienced, trained technicians keep your heavy equipment running at peak performance.
-        </p>
+    <section class="services">
+      <div class="services__container">
+        <h2 class="section-heading">Services We Offer</h2>
+        <div class="services__grid">
+          <div class="services__item" v-for="service in serviceList" :key="service">
+            <span class="services__check">&#10003;</span>
+            <span>{{ service }}</span>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -32,18 +38,26 @@
       <div class="cta-banner__container">
         <h2>Need Truck Repair?</h2>
         <p>Contact us to schedule service for your heavy equipment.</p>
-        <router-link to="/contact" class="btn btn--primary">Schedule Service</router-link>
+        <div class="cta-banner__actions">
+          <a href="tel:8045986292" class="btn btn--primary">Call Now</a>
+          <router-link to="/contact" class="btn btn--outline">Schedule Service</router-link>
+        </div>
       </div>
     </section>
   </div>
 </template>
 
 <script setup>
-const services = [
-  { title: 'Dump Trucks', description: 'Complete repair and maintenance for all dump truck makes and models.' },
-  { title: 'Tractors', description: 'Full-service tractor repair to keep your fleet road-ready.' },
-  { title: 'Trailers', description: 'Trailer repair, welding, and maintenance services.' },
-  { title: 'Heavy Duty Maintenance', description: 'Preventive maintenance programs to reduce downtime and extend equipment life.' }
+const serviceList = [
+  'Clutches',
+  'Differentials',
+  'Transmissions',
+  'Lift Axle Repair',
+  'Hydraulic Repair',
+  'Tire Repair',
+  'Welding Steel & Aluminum',
+  'Brake Service',
+  'Other Services'
 ]
 </script>
 
@@ -71,8 +85,29 @@ const services = [
   }
 }
 
+.intro {
+  @include section-padding;
+
+  &__container {
+    @include container;
+    max-width: 800px;
+
+    p {
+      color: $dark-gray;
+      font-size: 1.05rem;
+      line-height: 1.8;
+      margin-bottom: 1.5rem;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
 .services {
   @include section-padding;
+  background-color: $light-gray;
 
   &__container {
     @include container;
@@ -81,46 +116,45 @@ const services = [
   &__grid {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 1.5rem;
+    gap: 1rem;
 
-    @include respond-to(md) {
+    @include respond-to(sm) {
       grid-template-columns: 1fr 1fr;
+    }
+
+    @include respond-to(lg) {
+      grid-template-columns: repeat(3, 1fr);
     }
   }
 
-  &__card {
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
     background: $white;
-    border: 1px solid $light-gray;
+    padding: 1.25rem 1.5rem;
     border-radius: 8px;
-    padding: 2rem;
-    transition: box-shadow 0.3s ease;
+    font-size: 1.05rem;
+    color: $dark-gray;
+  }
 
-    &:hover {
-      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
-    }
-
-    h3 {
-      color: $primary-blue;
-      margin-bottom: 0.75rem;
-    }
-
-    p {
-      color: $medium-gray;
-    }
+  &__check {
+    color: $accent-gold-text;
+    font-weight: 700;
+    font-size: 1.2rem;
+    flex-shrink: 0;
   }
 }
 
-.facility {
+.extras {
   @include section-padding;
-  background-color: $light-gray;
-  text-align: center;
 
   &__container {
     @include container;
-    max-width: 700px;
+    max-width: 800px;
 
     p {
-      color: $medium-gray-dark;
+      color: $dark-gray;
       font-size: 1.05rem;
       line-height: 1.8;
     }
@@ -129,7 +163,7 @@ const services = [
 
 .cta-banner {
   @include section-padding;
-  background-color: $primary-blue;
+  background-color: #2A5080;
   text-align: center;
   color: $white;
 
@@ -143,6 +177,13 @@ const services = [
       margin-bottom: 1.5rem;
       color: rgba($white, 0.9);
     }
+  }
+
+  &__actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
   }
 }
 </style>

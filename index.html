@@ -30,6 +30,94 @@
       <textarea name="message"></textarea>
     </form>
 
+    <!-- Hidden form for Netlify Forms detection: Driver Application -->
+    <form name="driver-application" netlify netlify-honeypot="bot-field" hidden>
+      <!-- Personal Info -->
+      <input name="personalInfo_firstName" /><input name="personalInfo_middleName" />
+      <input name="personalInfo_maidenName" /><input name="personalInfo_lastName" />
+      <input name="personalInfo_streetAddress" /><input name="personalInfo_city" />
+      <input name="personalInfo_state" /><input name="personalInfo_zipCode" />
+      <input name="personalInfo_howLongAtAddress" /><input name="personalInfo_dateOfBirth" />
+      <input name="personalInfo_cellPhone" />
+      <input name="personalInfo_expectedPay" />
+      <!-- Residency -->
+      <input name="residency_addresses1_streetAddress" /><input name="residency_addresses1_city" />
+      <input name="residency_addresses1_state" /><input name="residency_addresses1_zipCode" />
+      <input name="residency_addresses1_numberOfYears" />
+      <input name="residency_addresses2_streetAddress" /><input name="residency_addresses2_city" />
+      <input name="residency_addresses2_state" /><input name="residency_addresses2_zipCode" />
+      <input name="residency_addresses2_numberOfYears" />
+      <input name="residency_addresses3_streetAddress" /><input name="residency_addresses3_city" />
+      <input name="residency_addresses3_state" /><input name="residency_addresses3_zipCode" />
+      <input name="residency_addresses3_numberOfYears" />
+      <!-- License -->
+      <input name="license_state" /><input name="license_licenseNumber" />
+      <input name="license_licenseType" /><input name="license_expirationDate" />
+      <!-- Driving Experience -->
+      <input name="drivingExperience_entries1_classOfEquipment" /><input name="drivingExperience_entries1_typeOfEquipment" />
+      <input name="drivingExperience_entries1_dateFrom" /><input name="drivingExperience_entries1_dateTo" />
+      <input name="drivingExperience_entries1_miles" />
+      <input name="drivingExperience_entries2_classOfEquipment" /><input name="drivingExperience_entries2_typeOfEquipment" />
+      <input name="drivingExperience_entries2_dateFrom" /><input name="drivingExperience_entries2_dateTo" />
+      <input name="drivingExperience_entries2_miles" />
+      <input name="drivingExperience_entries3_classOfEquipment" /><input name="drivingExperience_entries3_typeOfEquipment" />
+      <input name="drivingExperience_entries3_dateFrom" /><input name="drivingExperience_entries3_dateTo" />
+      <input name="drivingExperience_entries3_miles" />
+      <!-- Accident Record -->
+      <input name="accidentRecord_noAccidents" />
+      <input name="accidentRecord_accidents1_date" /><input name="accidentRecord_accidents1_natureOfAccident" />
+      <input name="accidentRecord_accidents1_natureOther" /><input name="accidentRecord_accidents1_fatalities" />
+      <input name="accidentRecord_accidents1_injuries" /><input name="accidentRecord_accidents1_chemicalSpills" />
+      <input name="accidentRecord_accidents2_date" /><input name="accidentRecord_accidents2_natureOfAccident" />
+      <input name="accidentRecord_accidents2_natureOther" /><input name="accidentRecord_accidents2_fatalities" />
+      <input name="accidentRecord_accidents2_injuries" /><input name="accidentRecord_accidents2_chemicalSpills" />
+      <input name="accidentRecord_accidents3_date" /><input name="accidentRecord_accidents3_natureOfAccident" />
+      <input name="accidentRecord_accidents3_natureOther" /><input name="accidentRecord_accidents3_fatalities" />
+      <input name="accidentRecord_accidents3_injuries" /><input name="accidentRecord_accidents3_chemicalSpills" />
+      <!-- Traffic Convictions -->
+      <input name="trafficConvictions_noConvictions" />
+      <input name="trafficConvictions_convictions1_date" /><input name="trafficConvictions_convictions1_violation" />
+      <input name="trafficConvictions_convictions1_stateOfViolation" /><input name="trafficConvictions_convictions1_penalty" />
+      <input name="trafficConvictions_convictions2_date" /><input name="trafficConvictions_convictions2_violation" />
+      <input name="trafficConvictions_convictions2_stateOfViolation" /><input name="trafficConvictions_convictions2_penalty" />
+      <input name="trafficConvictions_convictions3_date" /><input name="trafficConvictions_convictions3_violation" />
+      <input name="trafficConvictions_convictions3_stateOfViolation" /><input name="trafficConvictions_convictions3_penalty" />
+      <!-- License History -->
+      <input name="licenseHistory_deniedLicense" /><textarea name="licenseHistory_deniedExplanation"></textarea>
+      <input name="licenseHistory_suspendedRevoked" /><textarea name="licenseHistory_suspendedExplanation"></textarea>
+      <!-- Employment Record -->
+      <input name="employmentRecord_employers1_employerName" /><input name="employmentRecord_employers1_address" />
+      <input name="employmentRecord_employers1_phone" /><input name="employmentRecord_employers1_positionHeld" />
+      <input name="employmentRecord_employers1_dateFrom" /><input name="employmentRecord_employers1_dateTo" />
+      <input name="employmentRecord_employers1_salary" /><input name="employmentRecord_employers1_reasonsForLeaving" />
+      <textarea name="employmentRecord_employers1_gapsInEmployment"></textarea>
+      <input name="employmentRecord_employers1_subjectToFMCSR" /><input name="employmentRecord_employers1_dotSafetySensitive" />
+      <input name="employmentRecord_employers2_employerName" /><input name="employmentRecord_employers2_address" />
+      <input name="employmentRecord_employers2_phone" /><input name="employmentRecord_employers2_positionHeld" />
+      <input name="employmentRecord_employers2_dateFrom" /><input name="employmentRecord_employers2_dateTo" />
+      <input name="employmentRecord_employers2_salary" /><input name="employmentRecord_employers2_reasonsForLeaving" />
+      <textarea name="employmentRecord_employers2_gapsInEmployment"></textarea>
+      <input name="employmentRecord_employers2_subjectToFMCSR" /><input name="employmentRecord_employers2_dotSafetySensitive" />
+      <input name="employmentRecord_employers3_employerName" /><input name="employmentRecord_employers3_address" />
+      <input name="employmentRecord_employers3_phone" /><input name="employmentRecord_employers3_positionHeld" />
+      <input name="employmentRecord_employers3_dateFrom" /><input name="employmentRecord_employers3_dateTo" />
+      <input name="employmentRecord_employers3_salary" /><input name="employmentRecord_employers3_reasonsForLeaving" />
+      <textarea name="employmentRecord_employers3_gapsInEmployment"></textarea>
+      <input name="employmentRecord_employers3_subjectToFMCSR" /><input name="employmentRecord_employers3_dotSafetySensitive" />
+      <!-- Certification -->
+      <input name="certification_certificationCheckbox" /><input name="certification_signatureDate" />
+      <input name="certification_signature" /><input name="certification_secondDate" />
+      <input name="certification_secondSignature" />
+      <!-- Disclosure -->
+      <input name="disclosure_authorizationCheckbox" /><input name="disclosure_disclosureDate" />
+      <input name="disclosure_disclosureSignature" /><input name="disclosure_printedName" />
+      <!-- MVR Auth -->
+      <input name="mvrAuth_employeeName" /><input name="mvrAuth_mvrLicenseNumber" />
+      <input name="mvrAuth_mvrState" /><input name="mvrAuth_yearsOfCDLExperience" />
+      <input name="mvrAuth_mvrDateOfBirth" />
+      <input name="mvrAuth_mvrSignature" />
+    </form>
+
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
