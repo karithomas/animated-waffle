@@ -18,7 +18,7 @@
               </div>
               <div class="contact-section__detail">
                 <h3>Fax</h3>
-                <span>(804) 598-6476</span>
+                <span>(804) 598-6290</span>
               </div>
               <div class="contact-section__detail">
                 <h3>Email</h3>
@@ -46,19 +46,21 @@
                 <label>Don't fill this out: <input name="bot-field" /></label>
               </p>
 
+              <p class="contact-form__required-note"><span class="required">*</span> indicates a required field</p>
+
               <div class="contact-form__field">
                 <label for="company">Company</label>
                 <input type="text" id="company" name="company" v-model="form.company" />
               </div>
 
               <div class="contact-form__field">
-                <label for="name">Name <span class="required">*</span></label>
-                <input type="text" id="name" name="name" v-model="form.name" required />
+                <label for="name">Name <span class="required" aria-hidden="true">*</span></label>
+                <input type="text" id="name" name="name" v-model="form.name" required aria-required="true" />
               </div>
 
               <div class="contact-form__field">
-                <label for="email">Email <span class="required">*</span></label>
-                <input type="email" id="email" name="email" v-model="form.email" required />
+                <label for="email">Email <span class="required" aria-hidden="true">*</span></label>
+                <input type="email" id="email" name="email" v-model="form.email" required aria-required="true" />
               </div>
 
               <div class="contact-form__field">
@@ -67,8 +69,8 @@
               </div>
 
               <div class="contact-form__field">
-                <label for="message">Message <span class="required">*</span></label>
-                <textarea id="message" name="message" rows="5" v-model="form.message" required></textarea>
+                <label for="message">Message <span class="required" aria-hidden="true">*</span></label>
+                <textarea id="message" name="message" rows="5" v-model="form.message" required aria-required="true"></textarea>
               </div>
 
               <button type="submit" class="btn btn--primary" :disabled="submitted">
@@ -82,14 +84,14 @@
 
     <section class="map">
       <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3168.5!2d-77.8!3d37.55!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzfCsDMzJzAwLjAiTiA3N8KwNDgnMDAuMCJX!5e0!3m2!1sen!2sus!4v1234567890"
+        src="https://www.google.com/maps?q=2285+Batterson+Rd,+Powhatan,+VA+23139&output=embed"
         width="100%"
         height="400"
         style="border:0;"
         allowfullscreen=""
         loading="lazy"
         referrerpolicy="no-referrer-when-downgrade"
-        title="R.S. Thomas Hauling location"
+        title="R.S. Thomas Hauling, Inc. location"
       ></iframe>
     </section>
   </div>
@@ -190,7 +192,7 @@ async function handleSubmit() {
       font-size: 0.9rem;
       text-transform: uppercase;
       letter-spacing: 1px;
-      color: $accent-gold;
+      color: $accent-gold-text;
       margin-bottom: 0.25rem;
     }
 
@@ -217,6 +219,15 @@ async function handleSubmit() {
   flex-direction: column;
   gap: 1.25rem;
 
+  &__required-note {
+    font-size: 0.85rem;
+    color: $medium-gray;
+
+    .required {
+      color: #dc2626;
+    }
+  }
+
   &__field {
     display: flex;
     flex-direction: column;
@@ -238,13 +249,20 @@ async function handleSubmit() {
       border: 1px solid $medium-gray;
       border-radius: 4px;
       font-size: 1rem;
-      transition: border-color 0.2s ease;
+      transition: border-color 0.2s ease, box-shadow 0.2s ease;
 
       &:focus {
         outline: none;
         border-color: $primary-blue;
+        box-shadow: 0 0 0 3px rgba($primary-blue, 0.2);
       }
     }
+  }
+
+  button:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+    transform: none;
   }
 }
 

@@ -7,7 +7,8 @@
       "Bash(cp /Users/karithomas/kari_code/rsthomashauling-temp/.gitignore /Users/karithomas/kari_code/animated-waffle/)",
       "Bash(rm -rf /Users/karithomas/kari_code/rsthomashauling-temp)",
       "Bash(npm install:*)",
-      "Bash(npm run:*)"
+      "Bash(npm run:*)",
+      "Bash(ls /Users/karithomas/kari_code/animated-waffle/public/images/*.svg)"
     ]
   }
 }

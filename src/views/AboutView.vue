@@ -2,7 +2,7 @@
   <div class="about">
     <section class="hero">
       <div class="hero__overlay">
-        <h1>About R.S. Thomas Hauling</h1>
+        <h1>About R.S. Thomas Hauling, Inc.</h1>
       </div>
     </section>
 
@@ -10,7 +10,7 @@
       <div class="story__container">
         <h2 class="section-heading">Our Story</h2>
         <p>
-          In 1985, Randy Thomas started R.S. Thomas Hauling with a single truck and a simple promise:
+          In 1985, Randy Thomas started R.S. Thomas Hauling, Inc. with a single truck and a simple promise:
           deliver quality work, on time, every time. What began as a one-man operation in Powhatan, Virginia
           has grown into one of Central Virginia's most respected hauling companies.
         </p>
@@ -44,11 +44,17 @@
         <h2 class="section-heading">Awards &amp; Certifications</h2>
         <div class="awards__grid">
           <div class="awards__item">
+            <div class="awards__badge-wrapper">
+              <img src="/images/clean-business-award-img.png" alt="Clean Business Award of Powhatan" class="awards__badge awards__badge--clean" />
+            </div>
             <h3>Clean Business Award</h3>
             <p>Powhatan County</p>
           </div>
           <div class="awards__item">
-            <h3>SWAM Certified</h3>
+            <div class="awards__badge-wrapper">
+              <img src="/images/swamlogo.jpg" alt="SWaM Certified" class="awards__badge awards__badge--swam" />
+            </div>
+            <h3>SWaM Certified</h3>
             <p>Small, Women-owned, and Minority-owned Business</p>
           </div>
         </div>
@@ -74,7 +80,7 @@
 .hero {
   min-height: 40vh;
   background-color: $primary-blue;
-  background-image: url('/images/hero-about.jpg');
+  background-image: url('/images/hero-about.svg');
   background-size: cover;
   background-position: center;
   display: flex;
@@ -160,6 +166,9 @@
   }
 
   &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
     padding: 2rem;
     background: $light-gray;
@@ -171,7 +180,28 @@
     }
 
     p {
-      color: $medium-gray;
+      color: $medium-gray-dark;
+    }
+  }
+
+  &__badge-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+    margin-bottom: 1rem;
+  }
+
+  &__badge {
+    max-height: 100%;
+    width: auto;
+
+    &--clean {
+      height: 150px;
+    }
+
+    &--swam {
+      height: 80px;
     }
   }
 }
@@ -185,7 +215,7 @@
     @include container;
 
     p {
-      color: $medium-gray;
+      color: $medium-gray-dark;
       font-size: 1.05rem;
     }
   }

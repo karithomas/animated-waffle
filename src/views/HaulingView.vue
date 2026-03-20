@@ -19,7 +19,7 @@
 
     <section class="fleet">
       <div class="fleet__container">
-        <h2 class="section-heading">Our Fleet</h2>
+        <h2 class="section-heading" style="color: #fff">Our Fleet</h2>
         <div class="fleet__stats">
           <div class="fleet__stat">
             <span class="fleet__stat-number">30+</span>
@@ -80,7 +80,7 @@ const materials = [
 .hero {
   min-height: 40vh;
   background-color: $primary-blue;
-  background-image: url('/images/hero-hauling.jpg');
+  background-image: url('/images/hero-hauling.svg');
   background-size: cover;
   background-position: center;
   display: flex;
@@ -130,7 +130,8 @@ const materials = [
 
 .fleet {
   @include section-padding;
-  background-color: $light-gray;
+  background-color: $primary-blue;
+  color: $white;
 
   &__container {
     @include container;
@@ -159,13 +160,13 @@ const materials = [
       font-weight: 600;
       text-transform: uppercase;
       letter-spacing: 1px;
-      color: $primary-blue;
+      color: rgba($white, 0.85);
       font-size: 0.9rem;
     }
   }
 
   &__detail {
-    color: $medium-gray;
+    color: rgba($white, 0.85);
     font-size: 1.05rem;
   }
 }

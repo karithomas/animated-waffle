@@ -54,7 +54,7 @@ const services = [
 .hero {
   min-height: 40vh;
   background-color: $primary-blue;
-  background-image: url('/images/hero-repair.jpg');
+  background-image: url('/images/hero-repair.svg');
   background-size: cover;
   background-position: center;
   display: flex;
@@ -120,7 +120,7 @@ const services = [
     max-width: 700px;
 
     p {
-      color: $medium-gray;
+      color: $medium-gray-dark;
       font-size: 1.05rem;
       line-height: 1.8;
     }

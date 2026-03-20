@@ -69,7 +69,7 @@
 .hero {
   min-height: 40vh;
   background-color: $primary-blue;
-  background-image: url('/images/hero-employment.jpg');
+  background-image: url('/images/hero-employment.svg');
   background-size: cover;
   background-position: center;
   display: flex;
@@ -115,7 +115,7 @@
     }
 
     p {
-      color: $medium-gray;
+      color: $medium-gray-dark;
     }
   }
 }
@@ -150,7 +150,7 @@
     }
 
     p {
-      color: $medium-gray;
+      color: $medium-gray-dark;
     }
   }
 }

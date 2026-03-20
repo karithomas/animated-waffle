@@ -1,8 +1,10 @@
 // Colors
 $primary-blue: #1B3A5C;
-$accent-gold: #D4A017;
+$accent-gold: #D4A017;        // Buttons, backgrounds only (2.75:1 on white)
+$accent-gold-text: #B45309;   // Text on white/light backgrounds (4.6:1 on white)
 $dark-gray: #2D2D2D;
-$medium-gray: #6B7280;
+$medium-gray: #6B7280;        // Text on white only (5.03:1 on white)
+$medium-gray-dark: #4B5563;   // Text on light gray backgrounds (6.38:1 on #F3F4F6)
 $light-gray: #F3F4F6;
 $white: #FFFFFF;
 
@@ -18,4 +20,4 @@ $breakpoint-xl: 1200px;
 
 // Layout
 $max-width: 1200px;
-$header-height: 80px;
+$header-height: 100px;

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="600" viewBox="0 0 1200 600">
+  <rect width="1200" height="600" fill="#C0C8D0"/>
+  <g transform="translate(600, 260)" fill="#8896A4">
+    <rect x="-40" y="-8" width="80" height="12" rx="4"/>
+    <rect x="-52" y="4" width="104" height="68" rx="8"/>
+    <circle cx="0" cy="38" r="22" fill="#C0C8D0"/>
+    <circle cx="0" cy="38" r="18" fill="#8896A4"/>
+    <circle cx="0" cy="38" r="10" fill="#C0C8D0"/>
+  </g>
+  <text x="600" y="370" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="24" fill="#8896A4">Fleet / Trucks Photo</text>
+</svg>

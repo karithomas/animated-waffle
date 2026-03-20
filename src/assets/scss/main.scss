@@ -18,6 +18,16 @@ h1 { font-size: 2.5rem; }
 h2 { font-size: 2rem; }
 h3 { font-size: 1.5rem; }
 
+// Focus indicators for keyboard navigation
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: 3px solid $primary-blue;
+  outline-offset: 2px;
+}
+
 .btn {
   display: inline-block;
   padding: 0.75rem 1.5rem;
@@ -30,7 +40,7 @@ h3 { font-size: 1.5rem; }
   transition: background-color 0.3s ease, transform 0.2s ease;
 
   &--primary {
-    background-color: $accent-gold;
+    background-color: #C49315;
     color: $white;
 
     &:hover {
@@ -58,6 +68,11 @@ h3 { font-size: 1.5rem; }
       background-color: $white;
       color: $primary-blue;
     }
+  }
+
+  &:focus-visible {
+    outline: 3px solid $accent-gold;
+    outline-offset: 2px;
   }
 }
 

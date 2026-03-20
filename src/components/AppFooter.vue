@@ -3,8 +3,13 @@
     <div class="footer__container">
       <div class="footer__col">
         <div class="footer__brand">
-          <span class="footer__brand-name">R.S. Thomas Hauling</span>
+          <img src="/images/logo.png" alt="R.S. Thomas Hauling, Inc." class="footer__brand-logo" />
           <p class="footer__brand-tagline">Providing quality hauling services since 1985.</p>
+        </div>
+        <div class="footer__badges">
+          <img src="/images/swamlogo.jpg" alt="SWaM Certified — Small, Women-owned, and Minority-owned Business" class="footer__badge" />
+          <img src="/images/fleetmatics.jpg" alt="Fleetmatics" class="footer__badge" />
+          <img src="/images/card-logos.png" alt="We accept Visa and MasterCard" class="footer__badge" />
         </div>
       </div>
 
@@ -26,7 +31,7 @@
           <a href="tel:8045986292" class="footer__contact-item">
             Phone: (804) 598-6292
           </a>
-          <span class="footer__contact-item">Fax: (804) 598-6476</span>
+          <span class="footer__contact-item">Fax: (804) 598-6290</span>
           <a href="mailto:info@rsthomashauling.com" class="footer__contact-item">
             info@rsthomashauling.com
           </a>
@@ -39,7 +44,7 @@
     </div>
 
     <div class="footer__bottom">
-      <p>&copy; {{ currentYear }} R.S. Thomas Hauling. All rights reserved.</p>
+      <p>&copy; {{ currentYear }} R.S. Thomas Hauling, Inc. All rights reserved.</p>
     </div>
   </footer>
 </template>
@@ -69,18 +74,30 @@ const currentYear = new Date().getFullYear()
   }
 
   &__brand {
-    &-name {
-      font-family: $font-heading;
-      font-weight: 700;
-      font-size: 1.25rem;
-      display: block;
-      margin-bottom: 0.5rem;
+    &-logo {
+      height: 50px;
+      width: auto;
+      margin-bottom: 0.75rem;
     }
 
     &-tagline {
-      color: rgba($white, 0.7);
+      color: rgba($white, 0.85);
       font-size: 0.9rem;
     }
+  }
+
+  &__badges {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+  }
+
+  &__badge {
+    height: 40px;
+    width: auto;
+    border-radius: 4px;
   }
 
   &__heading {
@@ -88,7 +105,7 @@ const currentYear = new Date().getFullYear()
     font-size: 1rem;
     text-transform: uppercase;
     letter-spacing: 1px;
-    color: $accent-gold;
+    color: $accent-gold;  // Large text (bold 1rem + uppercase) — 3:1+ on blue
     margin-bottom: 1rem;
   }
 
@@ -103,7 +120,7 @@ const currentYear = new Date().getFullYear()
       transition: color 0.2s ease;
 
       &:hover {
-        color: $accent-gold;
+        color: $white;
       }
     }
   }
@@ -119,7 +136,7 @@ const currentYear = new Date().getFullYear()
       transition: color 0.2s ease;
 
       &:hover {
-        color: $accent-gold;
+        color: $white;
       }
     }
   }
@@ -133,7 +150,7 @@ const currentYear = new Date().getFullYear()
 
     p {
       font-size: 0.85rem;
-      color: rgba($white, 0.5);
+      color: rgba($white, 0.85);
     }
   }
 }
