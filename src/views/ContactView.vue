@@ -101,6 +101,13 @@
 
 <script setup>
 import { reactive, ref } from 'vue'
+import { useSeoMeta } from '../composables/useSeoMeta'
+
+useSeoMeta({
+  title: 'Contact Us | R.S. Thomas Hauling, Inc. | Powhatan, VA',
+  description: 'Contact R.S. Thomas Hauling, Inc. at (804) 598-6292 or visit us at 2285 Batterson Rd, Powhatan, VA 23139. Request a quote for hauling or schedule truck repair.',
+  canonical: 'https://www.rsthomashauling.com/contact'
+})
 
 const form = reactive({
   company: '',

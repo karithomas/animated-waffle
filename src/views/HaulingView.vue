@@ -77,6 +77,14 @@
 </template>
 
 <script setup>
+import { useSeoMeta } from '../composables/useSeoMeta'
+
+useSeoMeta({
+  title: 'Hauling Services | R.S. Thomas Hauling, Inc. | Powhatan, VA',
+  description: 'Commercial aggregate hauling across Virginia — dirt, stone, sand, rip rap, armor stone, and more. 30+ dump trucks and trailers. Call (804) 598-6292 for a quote.',
+  canonical: 'https://www.rsthomashauling.com/hauling'
+})
+
 const materials = [
   'Dirt',
   'Stone',

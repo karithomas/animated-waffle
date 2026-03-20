@@ -59,7 +59,14 @@
 </template>
 
 <script setup>
+import { useSeoMeta } from '../composables/useSeoMeta'
 import DriverApplication from '../components/employment/DriverApplication.vue'
+
+useSeoMeta({
+  title: 'Employment | R.S. Thomas Hauling, Inc. | Powhatan, VA',
+  description: 'Apply to drive for R.S. Thomas Hauling, Inc. in Powhatan, VA. Now hiring Class A & B CDL dump truck and dump trailer drivers. Apply online or call (804) 598-6292.',
+  canonical: 'https://www.rsthomashauling.com/employment'
+})
 </script>
 
 <style lang="scss" scoped>

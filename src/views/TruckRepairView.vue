@@ -48,6 +48,14 @@
 </template>
 
 <script setup>
+import { useSeoMeta } from '../composables/useSeoMeta'
+
+useSeoMeta({
+  title: 'Heavy Truck Repair | R.S. Thomas Hauling, Inc. | Powhatan, VA',
+  description: 'Full-service heavy truck repair in Powhatan, VA. Dump trucks, tractor-trailers, clutches, differentials, transmissions, hydraulic repair, and more. Call (804) 598-6292.',
+  canonical: 'https://www.rsthomashauling.com/truck-repair'
+})
+
 const serviceList = [
   'Clutches',
   'Differentials',

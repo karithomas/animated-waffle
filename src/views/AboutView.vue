@@ -84,6 +84,13 @@
 </template>
 
 <script setup>
+import { useSeoMeta } from '../composables/useSeoMeta'
+
+useSeoMeta({
+  title: 'About Us | R.S. Thomas Hauling, Inc. | Powhatan, VA',
+  description: 'Family-owned since 1985, R.S. Thomas Hauling, Inc. is one of Virginia\'s most trusted hauling contractors. 30+ trucks, 30+ CDL drivers, serving VA and surrounding states.',
+  canonical: 'https://www.rsthomashauling.com/about'
+})
 </script>
 
 <style lang="scss" scoped>
