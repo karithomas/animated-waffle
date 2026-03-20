@@ -28,6 +28,20 @@ select:focus-visible {
   outline-offset: 2px;
 }
 
+// High-contrast focus for elements on dark backgrounds
+.header,
+.footer,
+.hero,
+.cta-banner,
+.about-snippet,
+.fleet,
+.stats {
+  a:focus-visible,
+  button:focus-visible {
+    outline-color: $white;
+  }
+}
+
 .btn {
   display: inline-block;
   padding: 0.75rem 1.5rem;
@@ -82,4 +96,8 @@ select:focus-visible {
   letter-spacing: 2px;
   margin-bottom: 2rem;
   color: $primary-blue;
+
+  &--light {
+    color: $white;
+  }
 }

@@ -38,6 +38,7 @@
           type="text"
           :value="employer.address"
           @input="updateEmployerField(index, 'address', $event.target.value)"
+          required
           aria-required="true"
         />
       </div>

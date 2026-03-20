@@ -92,6 +92,8 @@
         loading="lazy"
         referrerpolicy="no-referrer-when-downgrade"
         title="R.S. Thomas Hauling, Inc. location"
+        role="region"
+        aria-label="Map showing R.S. Thomas Hauling, Inc. location"
       ></iframe>
     </section>
   </div>

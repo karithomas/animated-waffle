@@ -30,6 +30,7 @@
             type="text"
             :value="modelValue.employeeName"
             @input="update('employeeName', $event.target.value)"
+            required
             aria-required="true"
           />
         </div>
@@ -43,6 +44,7 @@
             type="text"
             :value="modelValue.mvrLicenseNumber"
             @input="update('mvrLicenseNumber', $event.target.value)"
+            required
             aria-required="true"
           />
         </div>
@@ -57,6 +59,7 @@
             id="mvrState"
             :value="modelValue.mvrState"
             @change="update('mvrState', $event.target.value)"
+            required
             aria-required="true"
           >
             <option value="">Select a state</option>
@@ -79,6 +82,7 @@
             type="text"
             :value="modelValue.yearsOfCDLExperience"
             @input="update('yearsOfCDLExperience', $event.target.value)"
+            required
             aria-required="true"
           />
         </div>
@@ -94,6 +98,7 @@
             type="date"
             :value="modelValue.mvrDateOfBirth"
             @input="update('mvrDateOfBirth', $event.target.value)"
+            required
             aria-required="true"
           />
           <p class="form-hint">Pre-filled from Step 1 if available.</p>
@@ -115,6 +120,7 @@
             type="text"
             :value="modelValue.mvrSignature"
             @input="update('mvrSignature', $event.target.value)"
+            required
             aria-required="true"
           />
         </div>

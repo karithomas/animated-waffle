@@ -175,7 +175,7 @@ const serviceList = [
     p {
       font-size: 1.1rem;
       margin-bottom: 1.5rem;
-      color: rgba($white, 0.9);
+      color: $white;
     }
   }
 

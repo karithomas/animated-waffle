@@ -22,6 +22,7 @@
             type="text"
             :value="modelValue.firstName"
             @input="update('firstName', $event.target.value)"
+            required
             aria-required="true"
           />
         </div>
@@ -45,6 +46,7 @@
             type="text"
             :value="modelValue.lastName"
             @input="update('lastName', $event.target.value)"
+            required
             aria-required="true"
           />
         </div>
@@ -76,6 +78,7 @@
             type="text"
             :value="modelValue.streetAddress"
             @input="update('streetAddress', $event.target.value)"
+            required
             aria-required="true"
           />
         </div>
@@ -91,6 +94,7 @@
             type="text"
             :value="modelValue.city"
             @input="update('city', $event.target.value)"
+            required
             aria-required="true"
           />
         </div>
@@ -103,6 +107,7 @@
             id="state"
             :value="modelValue.state"
             @change="update('state', $event.target.value)"
+            required
             aria-required="true"
           >
             <option value="">Select a state</option>
@@ -126,6 +131,7 @@
             inputmode="numeric"
             :value="modelValue.zipCode"
             @input="update('zipCode', $event.target.value)"
+            required
             aria-required="true"
           />
         </div>
@@ -158,6 +164,7 @@
             type="date"
             :value="modelValue.dateOfBirth"
             @input="update('dateOfBirth', $event.target.value)"
+            required
             aria-required="true"
           />
         </div>
@@ -171,6 +178,7 @@
             type="tel"
             :value="modelValue.cellPhone"
             @input="update('cellPhone', $event.target.value)"
+            required
             aria-required="true"
           />
         </div>

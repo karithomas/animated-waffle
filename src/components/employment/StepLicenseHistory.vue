@@ -43,6 +43,7 @@
           :value="localData.deniedLicenseExplanation"
           @input="updateField('deniedLicenseExplanation', $event.target.value)"
           rows="4"
+          required
           aria-required="true"
         ></textarea>
       </div>
@@ -86,6 +87,7 @@
           :value="localData.suspendedRevokedExplanation"
           @input="updateField('suspendedRevokedExplanation', $event.target.value)"
           rows="4"
+          required
           aria-required="true"
         ></textarea>
       </div>

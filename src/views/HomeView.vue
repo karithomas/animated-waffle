@@ -30,7 +30,7 @@
 
     <section class="about-snippet">
       <div class="about-snippet__container">
-        <h2 class="section-heading" style="color: #fff">About R.S. Thomas Hauling, Inc.</h2>
+        <h2 class="section-heading section-heading--light">About R.S. Thomas Hauling, Inc.</h2>
         <div class="about-snippet__stats">
           <div class="about-snippet__stat">
             <span class="about-snippet__stat-number">40+</span>
@@ -124,7 +124,7 @@
     p {
       font-size: 1.1rem;
       margin-bottom: 2rem;
-      color: rgba($white, 0.9);
+      color: $white;
     }
   }
 }
@@ -205,7 +205,7 @@
       font-size: 0.9rem;
       text-transform: uppercase;
       letter-spacing: 1px;
-      color: rgba($white, 0.85);
+      color: rgba($white, 0.9);
     }
   }
 
@@ -269,7 +269,7 @@
       margin-bottom: 1.5rem;
 
       a {
-        color: $accent-gold;  // Large bold text on blue — 3:1+ passes
+        color: $white;
         font-weight: 600;
         text-decoration: underline;
 

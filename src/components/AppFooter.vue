@@ -46,6 +46,8 @@
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
           title="R.S. Thomas Hauling, Inc. location"
+          role="region"
+          aria-label="Map showing R.S. Thomas Hauling, Inc. location"
         ></iframe>
       </div>
     </div>
@@ -165,7 +167,7 @@ const currentYear = new Date().getFullYear()
       font-size: 0.75rem;
       text-transform: uppercase;
       letter-spacing: 1.5px;
-      color: $accent-gold;
+      color: rgba($white, 0.9);
     }
 
     a, span {

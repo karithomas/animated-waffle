@@ -39,6 +39,7 @@
             type="date"
             :value="modelValue.disclosureDate"
             @input="update('disclosureDate', $event.target.value)"
+            required
             aria-required="true"
           />
         </div>
@@ -52,6 +53,7 @@
             type="text"
             :value="modelValue.disclosureSignature"
             @input="update('disclosureSignature', $event.target.value)"
+            required
             aria-required="true"
           />
         </div>
@@ -67,6 +69,7 @@
             type="text"
             :value="modelValue.printedName"
             @input="update('printedName', $event.target.value)"
+            required
             aria-required="true"
           />
         </div>

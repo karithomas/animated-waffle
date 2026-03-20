@@ -38,6 +38,7 @@
             type="date"
             :value="modelValue.signatureDate"
             @input="update('signatureDate', $event.target.value)"
+            required
             aria-required="true"
           />
         </div>
@@ -51,6 +52,7 @@
             type="text"
             :value="modelValue.signature"
             @input="update('signature', $event.target.value)"
+            required
             aria-required="true"
           />
         </div>
@@ -66,6 +68,7 @@
             type="date"
             :value="modelValue.secondDate"
             @input="update('secondDate', $event.target.value)"
+            required
             aria-required="true"
           />
         </div>
@@ -79,6 +82,7 @@
             type="text"
             :value="modelValue.secondSignature"
             @input="update('secondSignature', $event.target.value)"
+            required
             aria-required="true"
           />
         </div>

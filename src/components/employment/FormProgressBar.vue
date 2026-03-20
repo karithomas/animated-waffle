@@ -109,7 +109,7 @@ defineProps({
 
   &__fill {
     height: 100%;
-    background-color: $accent-gold;
+    background-color: $primary-blue;
     border-radius: 4px;
     transition: width 0.3s ease;
   }
@@ -135,14 +135,14 @@ defineProps({
   }
 
   &__dot--completed .progress-bar__dot-indicator {
-    background-color: $accent-gold;
-    border-color: $accent-gold;
+    background-color: $primary-blue;
+    border-color: $primary-blue;
   }
 
   &__dot--active .progress-bar__dot-indicator {
     background-color: $white;
-    border-color: $accent-gold;
-    box-shadow: 0 0 0 3px rgba($accent-gold, 0.25);
+    border-color: $primary-blue;
+    box-shadow: 0 0 0 3px rgba($primary-blue, 0.25);
   }
 }
 </style>

@@ -23,6 +23,7 @@
             id="licenseState"
             :value="modelValue.state"
             @change="update('state', $event.target.value)"
+            required
             aria-required="true"
           >
             <option value="">Select a state</option>
@@ -45,6 +46,7 @@
             type="text"
             :value="modelValue.licenseNumber"
             @input="update('licenseNumber', $event.target.value)"
+            required
             aria-required="true"
           />
         </div>
@@ -61,6 +63,7 @@
             placeholder="e.g., CDL Class A"
             :value="modelValue.licenseType"
             @input="update('licenseType', $event.target.value)"
+            required
             aria-required="true"
           />
         </div>
@@ -74,6 +77,7 @@
             type="date"
             :value="modelValue.expirationDate"
             @input="update('expirationDate', $event.target.value)"
+            required
             aria-required="true"
           />
         </div>

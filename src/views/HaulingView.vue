@@ -35,7 +35,7 @@
 
     <section class="fleet">
       <div class="fleet__container">
-        <h2 class="section-heading" style="color: #fff">Our Fleet</h2>
+        <h2 class="section-heading section-heading--light">Our Fleet</h2>
         <div class="fleet__stats">
           <div class="fleet__stat">
             <span class="fleet__stat-number">30+</span>
@@ -197,7 +197,7 @@ const materials = [
       font-weight: 600;
       text-transform: uppercase;
       letter-spacing: 1px;
-      color: rgba($white, 0.85);
+      color: rgba($white, 0.9);
       font-size: 0.9rem;
     }
   }
@@ -247,7 +247,7 @@ const materials = [
     p {
       font-size: 1.1rem;
       margin-bottom: 1.5rem;
-      color: rgba($white, 0.9);
+      color: $white;
     }
   }
 }
